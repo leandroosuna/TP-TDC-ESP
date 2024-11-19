@@ -1,0 +1,77 @@
+body {
+    font-family: 'YourFont', sans-serif; /* Or your desired font */
+}
+
+#interactionArea {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 5px;
+    width: 320px;
+    height: 320px;
+    margin: 20px auto;
+    
+}
+
+/* Styling for each button zone */
+.direction {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: lightgray;
+    border: 1px solid #333;
+    font-weight: bold;
+    color: #333;
+    user-select: none;
+    touch-action: none;
+
+    
+}
+
+/* Add shading for touch zones */
+.direction:active {
+    background-color: #888;
+    color: white;
+}
+
+/* Specific styles for each direction */
+.up {
+    grid-area: 1 / 2;
+
+    
+}
+
+.down {
+    grid-area: 3 / 2;
+}
+
+.left {
+    grid-area: 2 / 1;
+}
+
+.right {
+    grid-area: 2 / 3;
+}
+
+.up-left {
+    grid-area: 1 / 1;
+}
+
+.up-right {
+    grid-area: 1 / 3;
+}
+
+.down-left {
+    grid-area: 3 / 1;
+}
+
+.down-right {
+    grid-area: 3 / 3;
+}
+
+.center {
+    grid-area: 2 / 2;
+    background-color: #ddd;
+
+    background-color: black;
+}

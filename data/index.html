@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real-Time Line Plot</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <h2>Distancia</h2>
+    <div>
+        <canvas id="linePlot" width="600" height="400"></canvas>
+    </div>
+    <h2 style="padding-left: 250px;">Tiempo</h2>
+
+    <h2 id = "lastValue" style="padding-top: 50px">Ultimo Valor: </h2>
+    <h2 id = "objectiveValue" style="padding-top: 10px">Objetivo: </h2>
+
+    <div>
+        <input id = "K" type="number" value="0" style="font-size: 20px;"></input>
+        <button onclick="sendK()" style="font-size: 20px;">Actualizar K</button>
+        
+    </div>
+
+    <div style="padding-top: 30px;">
+        <input id = "Obj" type="number" value="0" style="font-size: 20px;"></input>
+        <button onclick="sendObj()" style="font-size: 20px;">Actualizar Objetivo</button>
+        
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
